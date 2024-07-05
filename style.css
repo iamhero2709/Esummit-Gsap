@@ -208,7 +208,7 @@
     height: 600vh;
     width: 100%;
     padding-top: 100px;
-    background-color: red;
+    background-color: inherit;
   }
   
 
