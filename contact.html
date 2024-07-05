@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About section</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Styles */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Gilroy', sans-serif;
+      color: #fff;
+      background-color: #000;
+    }
+    #main {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navigation */
+    #nav {
+      height: 55px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+    #nav h4 {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 0;
+    }
+    #nav-part1 {
+      flex: 1;
+    }
+    #nav-part2 {
+      flex: 2;
+      display: flex;
+      justify-content: space-around; /* Distribute space evenly */
+    }
+    #nav-part2 a {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    #nav-part2 a:hover h4 {
+      border-bottom: 1px solid #fff;
+    }
+    #nav-part3 {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+    #circle {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+    #nav h4:hover {
+      border-bottom: 1px solid #fff;
+    }
+
+    /* Contact Page */
+    #contact {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px 0;
+      width: 100%;
+    }
+    #contact #right, #contact #left {
+      flex: 1;
+      padding: 40px;
+    }
+    #contact #right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #contact #right h1 {
+      font-size: 7rem;
+      margin-bottom: 20px;
+    }
+    #contact #left {
+      background-color: #111;
+      border-radius: 10px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+    }
+    #contact #left label {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    #contact #left input, #contact #left textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      background-color: #222;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    #contact #left button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: orangered;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #contact #left button:hover {
+      background-color: #ff4500;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="page1">
+      <div id="nav">
+        <div id="nav-part1">
+          <h4>ESUMMIT IISER PUNE</h4>
+        </div>
+        <div id="nav-part2">
+          <a href="index.html"><h4>Home</h4></a>
+          <a href="about.html"><h4>About Us</h4></a>
+          <a href="speakers.html"><h4>Speakers</h4></a>
+          <a href="contact.html"><h4>Contact Us</h4></a>
+          <a href="sponsor.html"><h4>Sponsor</h4></a>
+        </div>
+        <div id="nav-part3">
+          <div id="circle"></div>
+        </div>
+      </div>
+      <div id="contact">
+        <div id="right">
+          <h1>Contact Us</h1>
+        </div>
+        <div id="left">
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

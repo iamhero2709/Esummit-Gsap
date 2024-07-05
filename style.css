@@ -1,219 +1,227 @@
 @font-face {
     font-family: china;
-   src: url(./src/NeueMachina-Regular.otf);
-}
-@font-face {
+    src: url(./src/NeueMachina-Regular.otf);
+  }
+  @font-face {
     font-family: 'Gilroy';
-  src: url(./src/Gilroy-Regular.ttf);
-}
-@font-face {
+    src: url(./src/Gilroy-Regular.ttf);
+  }
+  @font-face {
     font-family: 'PPmori';
     src: url(./src/PPMori-Regular.otf);
-}
-*{
+  }
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   color: #fff;
-   font-family: 'Gilroy';
-}
-.cursor{
- height: 25px;
- width: 25px;
+    color: #fff;
+    font-family: 'Gilroy';
+  }
+  .cursor {
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     position: fixed;
     background-color: orangered;
-    z-index:9;
+    z-index: 9;
     mix-blend-mode: difference;
-    transition: left linear 0.1s top linear 0.1s;
-}
-#main{
+    transition: left linear 0.1s, top linear 0.1s;
+  }
+  #main {
     background-color: #000000;
-}
-html,body{
     height: 100%;
     width: 100%;
-}
-#page1{
-   min-height: 100vh;
-   width: 100%;
-   position: relative;
-   z-index: 10;
-}
-#nav{
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  #page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+  #nav {
     height: 55px;
     width: 100%;
-    
     display: flex;
     align-items: center;
-justify-content: space-between;
-padding: 0 30px;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: #111;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-#nav-part2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
-}
-#nav-part3 #circle{
-height: 20px;
-width: 20px;
-border-radius: 50%;
-background-color:#fff;
-}
-#nav h4{
+
+#nav h4 {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 500;
+    margin: 0;
 }
-#nav-part1 h4:nth-child(1){
-font-size: 2rem;
+#nav-part2{
+  display: flex;
 }
-#nav-part2 h4:nth-child(1){
-border-bottom: 1px solid #fff;
-    }
-#page1 h1{
-font-size: 7vw;
-font-weight: 300;
-font-family:'PPmori';
-margin-top: 12vw;
-margin-left: 6vw;
+#nav-part2 h4 {
+    margin-left: 20px;
+    cursor: pointer;
 }
-#page1 h2{
+
+#nav-part2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+#nav-part3 #circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+  /**
+  #nav-part1 h4:nth-child(1) {
+    font-size: 2rem;
+  }
+  #nav-part2 h4:nth-child(1) {
+    border-bottom: 1px solid #fff;
+  }
+    **/
+  #page1 h1 {
     font-size: 7vw;
     font-weight: 300;
-    font-family:'PPmori';
-   
-margin-left: 22vw;
-    }
-#page1 video{
+    font-family: 'PPmori';
+    margin-top: 12vw;
+    margin-left: 6vw;
+  }
+  #page1 h2 {
+    font-size: 7vw;
+    font-weight: 300;
+    font-family: 'PPmori';
+    margin-left: 22vw;
+  }
+  #page1 video {
     width: 60%;
     margin-top: 10vw;
     position: relative;
     left: 50%;
-    transform: translate(-50%,0);
-    
-}
-#page2{
+    transform: translate(-50%, 0);
+  }
+  #page2 {
     min-height: 90vh;
     width: 100%;
-padding: 5vw;
-border-bottom: 2px solid black;
-position: relative;
-z-index: 10;
-}
-#page2 h1{
+    padding: 5vw;
+    border-bottom: 2px solid black;
+    position: relative;
+    z-index: 10;
+  }
+  #page2 h1 {
     font-size: 6vw;
     font-weight: 500;
     color: #111;
     font-family: china;
-
-}
-.page-container{
+  }
+  .page-container {
     height: 60%;
     width: 100%;
-    color:red;
+    color: red;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 5vw;
-
-}
-.page2-left{
-
-width: 33%;
-}
-.page2-right{
-   
+  }
+  .page2-left {
+    width: 33%;
+  }
+  .page2-right {
     width: 30%;
-    }
-.page2-left h2{
+  }
+  .page2-left h2 {
     font-size: 3.3vw;
     font-weight: lighter;
-   color: #111;
-   line-height: 4vw;
+    color: #111;
+    line-height: 4vw;
     text-transform: uppercase;
     font-family: china;
     font-weight: lighter;
-
-}
-.page2-right p{
+  }
+  .page2-right p {
     font-size: 1.6rem;
     line-height: 1.6rem;
     color: #111;
     font-family: china;
-    }
-.page2-right button{
-        margin-top: 12px;
-        width:100%;
-        border-radius: 50px;
-        border: none;
-        padding: 4px 2px;
-        background-color: #EDBFFF;
-    }
-#page3{
-        min-height: 300vh;
-        width: 100%;
-       
-        padding-top: 100px;
-        position: relative;
-        z-index: 10;
-     
-    }
-    #page3 h2{
-        font-size: 8vw;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'PPmori';
-        font-weight: 300;
-    }
-    #page3 img{
-        height: 100%;
-        width: 30vw;
-        margin-top: 100px;
-    }
-#page3 h1{
+  }
+  .page2-right button {
+    margin-top: 12px;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 2px;
+    background-color: #EDBFFF;
+  }
+  #page3 {
+    min-height: 300vh;
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 10;
+  }
+  #page3 h2 {
+    font-size: 8vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PPmori';
+    font-weight: 300;
+  }
+  #page3 img {
+    height: 100%;
+    width: 30vw;
+    margin-top: 100px;
+  }
+  #page3 h1 {
     color: #fff;
     font-size: 6.8vw;
     font-weight: 300;
     margin-left: 100px;
-}
-.page3-part1{
-   
+  }
+  .page3-part1, .page3-part2, .page3-part3 {
     padding: 60px 120px;
     display: flex;
-   flex-direction: row;
-   gap:12rem;
-
-}
-.page3-part2{
-   
-    padding: 60px 120px;
-    display: flex;
-   flex-direction: row;
-   gap:12rem;
-
-}
-
-.page3-part3{
-   
-    padding: 60px 120px;
-    display: flex;
-   flex-direction: row;
-   gap:12rem;
-
-}
-
-
-.page3-part1 h2{
-  
+    flex-direction: row;
+    gap: 12rem;
+  }
+  .page3-part1 h2, .page3-part2 h2, .page3-part3 h2 {
     font-size: 8vw;
     color: #111;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'PP mori';
+    font-family: 'PPmori';
     font-weight: 300;
-}
+  }
+  #page4 {
+    height: 600vh;
+    width: 100%;
+    padding-top: 100px;
+    background-color: red;
+  }
+  
+
+  @media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 5px 0;
+    }
+  }
